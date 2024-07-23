@@ -20,7 +20,7 @@ namespace WebApplication2.Services
         }
 
        
-
+        //Deletes the product fromt he list
         public void DeleteProduct(int productId)
         {
             var contact = _products.FirstOrDefault(c => c.Id == productId);
@@ -37,7 +37,7 @@ namespace WebApplication2.Services
         }
 
        
-
+        //gets the product's contact by id
         public Product GetProductById(int productId)
         {
             _productDictionary.TryGetValue(productId, out var product);
@@ -46,7 +46,7 @@ namespace WebApplication2.Services
 
         
        
-
+        //Adds a product by id
         public void AddContact(Product product)
         {
             ProductValidator.Validate(product);

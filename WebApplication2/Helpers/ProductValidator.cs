@@ -4,6 +4,7 @@ namespace WebApplication2.Helpers
 {
     public static class ProductValidator
     {
+        //Most provide a name and a description of the product otherwise it will not be valid
         public static void Validate(Product product)
         {
             if (string.IsNullOrWhiteSpace(product.Name))

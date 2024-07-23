@@ -33,6 +33,7 @@ finally
 var contactManager = new ProductManager();
 try
 {
+    //a list of the products I chose 
     contactManager.AddContact(new Product { Id = 1, Name = "apple", Description = "fruit", Price = 2.72m, StockAmount = 350 });
     contactManager.AddContact(new Product { Id = 1, Name = "banana", Description = "fruit", Price = 1.7m, StockAmount = 252 });
 }
